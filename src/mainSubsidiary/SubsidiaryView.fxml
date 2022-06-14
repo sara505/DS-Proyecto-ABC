@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SubsidiaryViewController">
+   <children>
+      <Label layoutX="41.0" layoutY="39.0" text="Id" />
+      <Label layoutX="41.0" layoutY="82.0" text="Nombre" />
+      <Label layoutX="38.0" layoutY="123.0" text="Direccion" />
+      <Label layoutX="38.0" layoutY="168.0" text="Fecha fundacion" />
+      <TextField fx:id="txtID" layoutX="158.0" layoutY="35.0" />
+      <TextField fx:id="txtNombre" layoutX="158.0" layoutY="78.0" />
+      <TextField fx:id="txtDireccion" layoutX="158.0" layoutY="119.0" />
+      <DatePicker fx:id="dpFechaFundacion" layoutX="151.0" layoutY="164.0" />
+      <Button fx:id="btBuscar" layoutX="334.0" layoutY="35.0" mnemonicParsing="false" onAction="#btBuscarOnAction" text="Buscar" />
+      <Button fx:id="btGuardar" layoutX="334.0" layoutY="219.0" mnemonicParsing="false" onAction="#btGuardarOnAction" text="Guardar" />
+      <Button fx:id="btCancelar" layoutX="524.0" layoutY="351.0" mnemonicParsing="false" onAction="#btCancelarOnAction" text="Cancelar" />
+      <Button fx:id="btActualizar" layoutX="402.0" layoutY="35.0" mnemonicParsing="false" onAction="#btActualizarOnAction" text="Actualizar" />
+      <TextField fx:id="txtDate" layoutX="151.0" layoutY="200.0" prefHeight="25.0" prefWidth="174.0" />
+   </children>
+</AnchorPane>
