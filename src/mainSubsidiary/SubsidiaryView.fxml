@@ -20,6 +20,5 @@
       <Button fx:id="btGuardar" layoutX="334.0" layoutY="219.0" mnemonicParsing="false" onAction="#btGuardarOnAction" text="Guardar" />
       <Button fx:id="btCancelar" layoutX="524.0" layoutY="351.0" mnemonicParsing="false" onAction="#btCancelarOnAction" text="Cancelar" />
       <Button fx:id="btActualizar" layoutX="402.0" layoutY="35.0" mnemonicParsing="false" onAction="#btActualizarOnAction" text="Actualizar" />
-      <TextField fx:id="txtDate" layoutX="151.0" layoutY="200.0" prefHeight="25.0" prefWidth="174.0" />
    </children>
 </AnchorPane>

@@ -5,10 +5,10 @@
  */
 package getset;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
+
+
+import java.time.LocalDate;
+
 
 /**
  *
@@ -18,10 +18,9 @@ public class SubsidiaryVariables {
     
     private String nombre_sede;
     private int id_sede;
-    private  String fechaFundacion_sede;
+    private  LocalDate fechaFundacion_sede;
     private String direccion_sede;
     
-    SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
 
     
     public String getNombre_sede() {
@@ -40,13 +39,11 @@ public class SubsidiaryVariables {
         this.id_sede = id_sede;
     }
 
-    public String getFechaFundacion_sede() {
+    public LocalDate getFechaFundacion_sede() {
         return fechaFundacion_sede;
     }
 
-    public void setFechaFundacion_sede(String fechaFundacion_sede) {
-        
-        //fechaFundacion_sede = Date.parse(LafechaFundacion_sede);
+    public void setFechaFundacion_sede(LocalDate fechaFundacion_sede) {   
         this.fechaFundacion_sede = fechaFundacion_sede;
     }
 
@@ -62,7 +59,5 @@ public class SubsidiaryVariables {
     public String toString() {
         return "Sede{" + "nombre_sede=" + nombre_sede + ", id_sede=" + id_sede + ", fechaFundacion_sede=" + fechaFundacion_sede + ", direccion_sede=" + direccion_sede + '}';
     }
-    
-
-    
+      
 }
